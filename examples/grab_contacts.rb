@@ -10,3 +10,9 @@ Contacts.new(:gmail, login, password).contacts
 Contacts.new("gmail", login, password).contacts
 
 Contacts.guess(login, password).contacts
+
+
+# In rails console
+
+require "contacts"
+Contacts::Gmail.new(login, password).contacts
